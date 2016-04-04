@@ -66,6 +66,10 @@ body {
     }
   }
 
+  #remove {
+    float: right;
+  }
+
   .error-template {
     display: none;
     width: 700px; //this is bad, need refactoring

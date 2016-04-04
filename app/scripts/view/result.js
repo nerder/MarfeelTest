@@ -1,7 +1,9 @@
 
 const templateResult = ({ avatar_url, bio, name, login, repos  }) => {
+  cleaner();
   const template = document.getElementById('results-template').innerHTML;
   const el = document.createElement('div');
+  el.className = 'result-element';
   el.innerHTML = template;
   el.getElementsByClassName('user-avatar')[0].src = avatar_url ? avatar_url : '';
   el.getElementsByClassName('username')[0].innerHTML += login ? login : 'unknown';
@@ -27,6 +29,10 @@ const templateResult = ({ avatar_url, bio, name, login, repos  }) => {
 };
 
 const templateError = () => {
+  if(document.getElementsByClassName('resultElement').length) {
+    removeResult();
+  }
+
   const template = document.getElementById('results-template').innerHTML;
   const el = document.createElement('div');
   el.innerHTML = template;
@@ -35,3 +41,20 @@ const templateError = () => {
   el.getElementsByClassName('error-template')[0].style.display = 'block';
   document.getElementById('results').appendChild(el);
 }
+
+const cleaner = () => {
+  if(document.getElementsByClassName('result-element').length) {
+    removeResult();
+  }
+  if(document.getElementsByClassName('error-template').length) {
+    removeError();
+  }
+}
+
+const removeResult = () => {
+  document.getElementsByClassName('result-element')[0].remove();
+};
+
+const removeError = () => {
+  document.getElementsByClassName('error-template')[0].remove();
+};

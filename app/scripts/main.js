@@ -1,4 +1,5 @@
 var buttonSearch = document.getElementById('search');
+var buttonRemove = document.getElementById('remove');
 
 buttonSearch.addEventListener('submit', e => {
     e.preventDefault();
