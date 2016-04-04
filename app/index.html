@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MarfeelTest</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">App</a></li>
+        </ul>
+        <h3 class="text-muted">Marfeel Junior Test - Stefano Saitta</h3>
+      </div>
+
+      <div class="container-wrapper">
+        <div class="search-box">
+          <form id="search" class="form-inline">
+            <div class="form-group">
+              <input id="username" type="text" class="form-control input-lg" placeholder="Search username...">
+            </div>
+            <button type="submit" class="btn btn-lg btn-default">Search</button>
+          </form>
+        </div>
+        <div id="results">
+        <script id="results-template" type="x-template">
+          <div class="results-box">
+            <div class="avatar">
+              <img class="user-avatar" src="https://pbs.twimg.com/profile_images/616309728688238592/pBeeJQDQ.png" />
+            </div>
+            <div class="infos">
+              <span class="username">@</span>
+              <span class="full-name"></span>
+              <span class="bio"></span>
+            </div>
+          </div>
+          <div class="results-list-wrapper">
+            <div class="results-header">
+              <span>Repositories</span>
+            </div>
+            <div class="results-list">
+              <div class="result-template">
+                <div class="result-title">
+                  <span class="repo-name"></span>
+                </div>
+                <div class="stats">
+                  <i class="fa fa-star"></i><span class="stars"></span>
+                  <i class="fa fa-code-fork"></i><span class="forks"></span>
+                </div>
+              </div>
+              <div class="no-result">no repo</div>
+            </div>
+          </div>
+          <div class="error-template">
+            <div class="error">
+              <span>CIAO</span>
+            </div>
+          </div>
+        </script>
+        </div>
+      </div>
+    </div>
+      <div class="footer">
+        <p>Build with ♥ by Stefano Saitta</p>
+      </div>
+    </div>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/axios/dist/axios.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/service/api.js"></script>
+    <script src="scripts/view/result.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
