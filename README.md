@@ -1,6 +1,7 @@
 # MarfeelTest - Stefano Saitta
 ## Getting Start
-- Install dependencies: `npm install --global gulp-cli bower` (just in case you don't have them already)
+- Install dependencies: 
+  - `npm install --global gulp-cli bower` (just in case you don't have them already)
 - Install the app: 
   - `npm install`
   - `bower install`
