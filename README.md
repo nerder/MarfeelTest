@@ -5,7 +5,6 @@ Install the app:
 - `npm install`
 - `bower install`
 - `gulp serve`
-- 
 
 ## Docs
 ### Environment Setup
