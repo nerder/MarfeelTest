@@ -29,16 +29,11 @@ const templateResult = ({ avatar_url, bio, name, login, repos  }) => {
 };
 
 const templateError = () => {
-  if(document.getElementsByClassName('resultElement').length) {
-    removeResult();
-  }
-
-  const template = document.getElementById('results-template').innerHTML;
+  cleaner();
+  console.log('yo!');
+  const template = document.getElementById('error-template').innerHTML;
   const el = document.createElement('div');
   el.innerHTML = template;
-  el.getElementsByClassName('results-box')[0].style.display = 'none';
-  el.getElementsByClassName('results-list-wrapper')[0].style.display = 'none';
-  el.getElementsByClassName('error-template')[0].style.display = 'block';
   document.getElementById('results').appendChild(el);
 }
 

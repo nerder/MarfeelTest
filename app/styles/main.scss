@@ -71,7 +71,6 @@ body {
   }
 
   .error-template {
-    display: none;
     width: 700px; //this is bad, need refactoring
     .error {
       color: indianred;
@@ -84,7 +83,7 @@ body {
       border-radius: 5px;
       line-height: 100px;
       white-space: nowrap;
-      background: rgba(255,0,0,0.3);
+      background: rgba(200,0,0,0.3);
     }
   }
 
