@@ -1,4 +1,13 @@
 # MarfeelTest - Stefano Saitta
+
+This is a short test for [Marfeel](https://www.marfeel.com/).
+
+## Report
+
+Here you can find a small report about how i spend time building it and how many hours tooks to me, of course is approximate so you could think about this adding 1 or 2 hour:
+
+[Marfeel Project Report](https://github.com/nerder/MarfeelTest/blob/master/Marfeel_Project_2016-04-04_to_2016-04-10.pdf)
+
 ## Getting Start
 - Install dependencies: 
   - `npm install --global gulp-cli bower` (just in case you don't have them already)
